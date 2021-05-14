@@ -18,6 +18,7 @@
     -moz-osx-font-smoothing: grayscale;
     // text-align: center;
     background: #f6f6f6;
+    overflow: auto;
   }
 
   #nav {
