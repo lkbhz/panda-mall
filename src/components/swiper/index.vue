@@ -30,11 +30,13 @@ export default {
   computed: {},
   mounted() {
     this.mySwiper = new Swiper('.mySwiper', {
+      // 播放指示
       pagination: {
         el: ".swiper-pagination",
       },
-      autoplay: true,
-      loop: true,
+      autoplay: true, // 自动播放
+      loop: true,  // 循环
+      // 切换按钮
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',

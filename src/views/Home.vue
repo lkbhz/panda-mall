@@ -33,6 +33,12 @@
       <h3>小编精选</h3>
       <p class="title-bar-prompt">每天更新</p>
     </div>
+    <ul class="product-box">
+      <template v-for="item in 10" >
+        <product-card :key="item" />
+      </template>
+      
+    </ul>
   </div>
 </template>
 
@@ -41,6 +47,7 @@ import Menu from '@/components/menu/index.vue'
 import headerCom from '@/components/header/index.vue'
 import active from '@/components/active/index.vue'
 import swiper from '@/components/swiper/index.vue'
+import productCard from '@/components/card/index.vue'
 
 export default {
   name: 'Home',
@@ -48,7 +55,8 @@ export default {
     Menu,
     headerCom,
     active,
-    swiper
+    swiper,
+    productCard
   },
 }
 </script>
@@ -183,6 +191,14 @@ export default {
       font-size: 14px;
       color: #877a73;
     }
+  }
+  .product-box {
+    width: 1200px;
+    min-height: 600px;
+    padding: 0 3px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
   }
 }
 </style>
